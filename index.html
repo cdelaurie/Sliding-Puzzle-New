@@ -149,7 +149,7 @@
               spread: 70,
               origin: { y: 0.6 }
             });
-            alert(`Congratulations! You solved the puzzle in ${moveCount} moves!`);
+            alert(`🎉 Amazing! You solved the puzzle in ${moveCount} moves! 🎉`);
           }, 100);
         }
       }
@@ -159,7 +159,7 @@
       for (let i = 0; i < tiles.length - 1; i++) {
         if (tiles[i] !== i + 1) return false;
       }
-      return tiles[tiles.length - 1] = 0;
+      return tiles[tiles.length - 1] === 0;
     }
 
     function updateMoveCount() {
